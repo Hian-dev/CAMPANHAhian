@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <style>
+    #carrossel{
+    background-color: #247BA0;
+    padding: 50px;
+   }
+
+   #titulocarrossel{
+    color: #EAECE5;
+    text-align: center;
+    font-size: 25px;
+    
+   }
+
+   #divcards{
+    display: grid;
+    grid-auto-flow: column;
+   }
+
+   .card{
+    margin-left: 50px;
+    margin-top: 50px;
+   }
+
+   
+
+   #leonardo{
+    display: flex;
+   }
+
+
+
+   #bruna{
+    display: none;
+   }
+
+   #seta-esquerda{
+    display: none;
+   }
+
+   .seta{
+    margin-top: 70%;
+    cursor: pointer;
+   }
+
+   .seta:hover{
+    transform: translatey(-7px);
+    transition-duration: 0.5s;
+   }
+
+   #formulario{
+    text-align: center;
+   }
+
+   #titulo-formulario{
+    font-size: 25px;
+    margin: 25px;
+    color: #383838;
+   }
+ </style>
+ 
+ 
+ 
+ 
+ <div id="carrossel">
+        <h1 id="titulocarrossel">Mais de 500 alunos já iniciaram seus estudos</h1>
+
+       <div id="divcards">
+    
+        <img class="seta" onclick="RolarParaEsquerda()" id="seta-esquerda" src="ICONES/setaesquerda.svg" alt="">
+        <img class="card" id="leonardo" src="DEPOIMENTOS/Leonardo.svg" alt="">
+        <img class="card" id="samantha" src="DEPOIMENTOS/Samantha.svg" alt="">
+        <img class="card" id="bruna" src="DEPOIMENTOS/Bruna.svg" alt="">
+        <img class="seta" onclick="RolarParaDireita()" id="seta-direita" src="ICONES/setadireita.svg" alt="">
+
+        </div>
+       
+
+    </div>
+ </body>
+ </html>
+ 
+ 

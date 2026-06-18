@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Disponíveis - Uni Vitória TEC</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #111;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        header::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #0056b3;
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        /* CONFIGURAÇÃO DO CSS GRID */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas de larguras iguais */
+            gap: 30px; /* Espaçamento entre os blocos */
+        }
+
+        /* Responsividade para telas menores (celulares) */
+        @media (max-width: 900px) {
+            .grid-layout {
+                grid-template-columns: 1fr; /* Vira 1 coluna em telas menores */
+            }
+        }
+
+        .category-card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border: 1px solid #eef2f5;
+        }
+
+        .category-title {
+            background-color: #111111;
+            color: #ffffff;
+            padding: 14px 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 20px;
+        }
+
+        .course-list li {
+            font-size: 0.95rem;
+            padding: 8px 0;
+            color: #444;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+
+        .course-list li:last-child {
+            border-bottom: none;
+        }
+
+        .course-list li::before {
+            content: "•";
+            color: #0056b3;
+            font-weight: bold;
+            display: inline-block; 
+            width: 15px;
+            margin-right: 5px;
+        }
+
+        .logo-placeholder {
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            font-weight: bold;
+            color: #0056b3;
+            font-style: italic;
+            border: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Cursos Disponíveis</h1>
+    </header>
+
+    <div class="grid-layout">
+        
+        <div class="category-card">
+            <div class="category-title">Área da Saúde</div>
+            <ul class="course-list">
+                <li>Técnico em Agente Comunitário de Saúde</li>
+                <li>Técnico em Análises Clínicas</li>
+                <li>Técnico em Cuidador de Idosos</li>
+                <li>Técnico em Enfermagem</li>
+                <li>Técnico em Equipamentos Biomédicos</li>
+                <li>Técnico em Estética</li>
+                <li>Técnico em Farmácia</li>
+                <li>Técnico em Gerência em Saúde</li>
+                <li>Técnico em Nutrição e Dietética</li>
+                <li>Técnico em Saúde Bucal</li>
+                <li>Técnico em Veterinária</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <div class="category-title">Área de Engenharia e Manutenção</div>
+            <ul class="course-list">
+                <li>Técnico em Automação Industrial</li>
+                <li>Técnico em Eletromecânica</li>
+                <li>Técnico em Eletrotécnica</li>
+                <li>Técnico em Eletrônica</li>
+                <li>Técnico em Manutenção de Máquinas Industriais</li>
+                <li>Técnico em Máquinas Pesadas</li>
+                <li>Técnico em Metalurgia</li>
+                <li>Técnico em Refrigeração e Climatização</li>
+                <li>Técnico em Soldagem</li>
+                <li>Técnico em Manutenção de Máquinas Navais</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <div class="category-title">Área de Administração e Gestão</div>
+            <ul class="course-list">
+                <li>Técnico em Administração</li>
+                <li>Técnico em Contabilidade</li>
+                <li>Técnico em Logística</li>
+                <li>Técnico em Marketing</li>
+                <li>Técnico em Qualidade</li>
+                <li>Técnico em Recursos Humanos</li>
+                <li>Técnico em Secretaria Escolar</li>
+                <li>Técnico em Segurança do Trabalho</li>
+                <li>Técnico em Serviços Jurídicos</li>
+                <li>Técnico em Vendas</li>
+                <li>Técnico em Eventos</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <div class="category-title">Área de Construção e Infraestrutura</div>
+            <ul class="course-list">
+                <li>Técnico em Agrimensura</li>
+                <li>Técnico em Edificações</li>
+                <li>Técnico em Mineração</li>
+                <li>Técnico em Segurança do Trabalho</li>
+                <li>Técnico em Prevenção e Combate ao Incêndio</li>
+                <li>Técnico em Defesa Civil</li>
+                <li>Técnico em Trânsito</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <div class="category-title">Área de Tecnologia e Informática</div>
+            <ul class="course-list">
+                <li>Técnico em Biotecnologia</li>
+                <li>Técnico em Design Gráfico</li>
+                <li>Técnico em Desenvolvimento de Sistemas</li>
+                <li>Técnico em Informática para Internet</li>
+                <li>Técnico em Rede de Computadores</li>
+                <li>Técnico em Sistemas de Energia Renovável</li>
+                <li>Técnico em Telecomunicações</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <div class="category-title">Área do Meio Ambiente</div>
+            <ul class="course-list">
+                <li>Técnico em Meio Ambiente</li>
+            </ul>
+            
+            <div class="category-title">Área de Serviços</div>
+            <ul class="course-list">
+                <li>Técnico em Gastronomia</li>
+                <li>Técnico em Óptica</li>
+                <li>Técnico em Designer de Interiores</li>
+                <li>Técnico em Guia de Turismo</li>
+                <li>Técnico em Química</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="logo-placeholder">uni Vitória TEC</div>
+    </footer>
+</div>
+
+</body>
+</html>

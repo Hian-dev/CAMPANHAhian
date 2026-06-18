@@ -1,0 +1,66 @@
+.carrossel{
+            background-color: #1a1a1a;
+            
+        }
+
+        .carrossel-titulo{
+            
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 75px 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-align: center;
+
+        }
+
+        .seta{
+            margin-top: 70%;
+            cursor: pointer;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+        }
+
+        .seta:hover{
+            transform: translatey(-7px);
+            transition-duration: 0.5s;
+        }
+        .card {
+            width: 65%;  /* Define a largura para 300 pixels */
+            border-radius: 15px; 
+            align-items: center;  
+            /* TRANSIÇÃO SUAVE:
+                Se o seu JS mudar o 'transform' (ex: translateX) ou a 'opacity', 
+                o navegador vai fazer o deslize de forma fluida durante 0.5 segundos. */
+            transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease;
+    
+            /* Otimização para a animação rodar sem engasgos em celulares */
+            will-change: transform, opacity;         
+        }
+
+        .divcards{
+            display: grid;
+            grid-auto-flow: column;
+            place-items: center;   
+            align-items: center; 
+            padding-bottom: 60px;                
+        }
+
+        #Juliana{
+            display: flex;
+        }
+
+        
+        #Mariana{
+            display: none;
+        }
+
+        #seta-esquerda{
+            display: none;
+        }
+
+       
