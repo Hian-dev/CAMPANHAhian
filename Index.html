@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>UniVitoria TEC</title>
+    <title>Certificação por Competência | Conclua seu Técnico</title>
     
 </head>
 <body>
@@ -12,7 +12,7 @@
     <!-- HEADER -->
     <header>
         <div class="container header-content">
-            <div class="logo">UNIVITORIA <span>TEC</span></div>
+            <div class="logo"> <img class="logo" src="IMAGENS/ChatGPT Image 19 de jun. de 2026, 08_50_54.png" alt=""></div>
         </div>
     </header>
 
@@ -26,33 +26,7 @@
                 <p>Você já domina a profissão na prática. Conquiste seu diploma técnico por competência, legalizado pelo MEC/Sistec, em poucos meses e sem precisar frequentar salas de aula tradicionais.</p>
             </div>
 
-            <!-- FORMULÁRIO DE CAPTAÇÃO -->
-            <div class="form-container">
-                <h3>Consulte sua Elegibilidade</h3>
-                <p>Preencha os dados abaixo e receba uma análise gratuita do seu currículo profissional.</p>
-                
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Nome Completo" required>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="WhatsApp (com DDD)" required>
-                    </div>
-
-                     <div class="form-group">
-                        <input type="text" id="curso" name="curso" placeholder="Nome do curso" required>
-                    </div>
-
-                    
-
-                    <button type="submit" class="btn-submit">Quero meu Diploma</button>
-                </form>
-            </div>
+           
 
         </div>
     </section>
@@ -113,6 +87,49 @@
 
     </section>
     -->
+
+    <!-- FORMULÁRIO DE CAPTAÇÃO -->
+            <div class="form-container">
+                <h3>Consulte sua Elegibilidade</h3>
+                <p>Preencha os dados abaixo e receba uma análise gratuita do seu currículo profissional.</p>
+                
+                <form id="Forms" action="#" method="POST">
+                    <div class="form-group">
+                        <input  type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Nome Completo"
+                                required>
+                    </div>
+
+                    <div class="form-group">
+                        <input  type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Seu E-mail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="WhatsApp" required>
+                    </div>
+
+                     <div class="form-group">
+                        <input type="text"
+                                id="curso"
+                                name="curso"
+                                placeholder="Curso" required>
+                    </div>
+
+                    
+
+                    <button type="submit" class="btn-submit">Quero meu Diploma</button>
+                </form>
+                <div id="mensagem"></div>
+                  
+            </div>
 
 <!--GRID CURSOS-->
     <div class="sessao-grid">
@@ -230,7 +247,6 @@
         </div>
     </footer>
 
+    <script src="index.js"> </script>
 </body>
-
- <script src="index.js"></script>
 </html>
